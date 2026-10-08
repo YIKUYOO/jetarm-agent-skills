@@ -1,0 +1,396 @@
+{
+  "verification_date": "2026-10-08",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "78bd41d8f6330aac728a43e5e26eeeb6d48dfb953ef36f74f7b805d44e24e73f"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "92fd1a8e0fc86c7f9f82ed494143f263460fdea422c16fd2888d4aa1981685ad"
+    },
+    {
+      "path": "gpu/__init__.py",
+      "sha256": "4ef52be21290f71ff502522183d53fd752a7cb6d00231db57ce231bee6fc8ebd"
+    },
+    {
+      "path": "gpu/convert_raw_to_lerobot.py",
+      "sha256": "25b061173e6b216fb4d79f085743e77c5f1a80c65185999b38ab725001376563"
+    },
+    {
+      "path": "gpu/dataloader_smoke.py",
+      "sha256": "e05bdb1ec3b7d8f043d72f1ea6546c78ed383d19bd7410499effa5bb3033fca9"
+    },
+    {
+      "path": "gpu/merge_raw_datasets.py",
+      "sha256": "aa13e2491b521e52a5458366eeaa1b547f87f49dfb4993b3a0d8210d563dc1af"
+    },
+    {
+      "path": "gpu/prepare_env.sh",
+      "sha256": "056ad99be3a2677d4effc07bf5c93ad9143439f9c48b1c82fe8aea9dfefc3628"
+    },
+    {
+      "path": "gpu/run_server.sh",
+      "sha256": "fa1922e307fcc60d4e70af2ba374c4cceb5cf1b3541581fab3f1b50f72d2bec7"
+    },
+    {
+      "path": "gpu/server.py",
+      "sha256": "789e5f58651c3d35db4e511e8154c2cb2bd8eee78fd0d7bb196df4c5231c6940"
+    },
+    {
+      "path": "gpu/smoke_server.sh",
+      "sha256": "81e0f88b50ce2c1946ef8130fb791a73859b3e49881c80f8d1c8356d44b96141"
+    },
+    {
+      "path": "gpu/start_vla_server.sh",
+      "sha256": "c09fae4e620c540aaee39646d2d404f6b1698aafd4baecd7cfca29e3deb87983"
+    },
+    {
+      "path": "gpu/summarize_eval.py",
+      "sha256": "8c16520b665452198c4541019e59973d846b9da3c89f69b5f6946d568fa20c6f"
+    },
+    {
+      "path": "gpu/train_smolvla.sh",
+      "sha256": "a774a2404fa1864a999ceb3b29451840758a28c7dd7e8c431c0f4bf71fde86f9"
+    },
+    {
+      "path": "gpu/validate_dataset.py",
+      "sha256": "780154c83c3f761c3b071292e6d00f2b5f2772aa695c152a17d80402fecb8759"
+    },
+    {
+      "path": "jetarm_vla_common/__init__.py",
+      "sha256": "c0e8627ac9bb81991ac71f3bc4b66cd1b7aa4fabeba151c24aa30bf9d59e3f65"
+    },
+    {
+      "path": "jetarm_vla_common/dataset_writer.py",
+      "sha256": "648fb06fa585eb3fd968c2c594f9ca61849dd9e1784346e59cf8ea8436711774"
+    },
+    {
+      "path": "jetarm_vla_common/depth.py",
+      "sha256": "f25b9752e9c1bc16ccf4ccb872defbf9478efa3500b4517ad96b88cb4fd14caf"
+    },
+    {
+      "path": "jetarm_vla_common/images.py",
+      "sha256": "87c418fa6433e818bd127ec21e16d2764de4587a54518be885298eb2c38038f7"
+    },
+    {
+      "path": "jetarm_vla_common/safety.py",
+      "sha256": "ff2f1c67ec53e892aa6b9a059817e5c1160bc82669ad4402e1ff2a17315c0511"
+    },
+    {
+      "path": "jetarm_vla_common/schema.py",
+      "sha256": "cdb4cbf59b60db00bf0df020fdc9144465240d32c64315f35ebff0726c27f20c"
+    },
+    {
+      "path": "launch/capture.launch",
+      "sha256": "b2ef0ef00debcebccc3cfe8dcc9a36614f866550a02f7a5b3bd6d3389cc08f92"
+    },
+    {
+      "path": "launch/client.launch",
+      "sha256": "de0a65c6067acf698f66d7ba7f8351c670050f1bb8ce1d3f6f129a6358d5ee2d"
+    },
+    {
+      "path": "package.xml",
+      "sha256": "5f69182af9823133f9a15ac8da463b9c255159c75280dddad4667ccf764db311"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada"
+    },
+    {
+      "path": "README.md",
+      "sha256": "67a9dfc929f73d33e61fe4737cb89a2e61d8db1fb4b05c13d97840b404492287"
+    },
+    {
+      "path": "requirements-offline.txt",
+      "sha256": "acbad46bddfb347db65fbcc154c69b3bb5a5da653be52dcdd382c3f26089b108"
+    },
+    {
+      "path": "scripts/batch_expert_collect.py",
+      "sha256": "e5881d4ef8c8b272c140c25c1ce43b094fc962872034717a475724cab956d8bf"
+    },
+    {
+      "path": "scripts/batch_rollout_collect.py",
+      "sha256": "9cce41f2352c0ec3fcfc427628b5c5433946492a5eb8006bffd534ce10ef2c87"
+    },
+    {
+      "path": "scripts/jetarm_vla_capture.py",
+      "sha256": "31d941aff047fe6cff3f95ac8aed47291089042e3bb1416a820f953c5fa9b49e"
+    },
+    {
+      "path": "scripts/jetarm_vla_client.py",
+      "sha256": "bc1c34af7aa17a4219e7c4b0fe333118900bd482736d51f0d5725d1f16b27cf9"
+    },
+    {
+      "path": "scripts/label_rollouts.py",
+      "sha256": "3095bfabf5a5fb1b0f1b069a03a8271cb9fa6b272bf19ef914f3f93c315cc54c"
+    },
+    {
+      "path": "scripts/start_vla_tunnel.sh",
+      "sha256": "ff40204bd2dba373800493d1831875cc8527939b0fb8e7b04609101d924f0a5c"
+    },
+    {
+      "path": "tests/test_convert_raw_to_lerobot_filters.py",
+      "sha256": "397120bef3bcf4a823dae305cb53a14956d42c64e962ad086664f7f895d7973e"
+    },
+    {
+      "path": "tests/test_jetarm_vla_depth.py",
+      "sha256": "45d5a4023811db96c057d45ce64a019044f06af0f8c6cd560915cd5e0879ce3d"
+    },
+    {
+      "path": "tests/test_jetarm_vla_images.py",
+      "sha256": "2511cf81f8abbc04fffb1916e05bf68349f9e4e8990e0aac8c949aa7e61b2d86"
+    },
+    {
+      "path": "tests/test_jetarm_vla_safety.py",
+      "sha256": "a652c0a75e1c68f0c23a32eca8b6f600a26a02d1e245ff0bf642544759c192a5"
+    },
+    {
+      "path": "tests/test_jetarm_vla_schema.py",
+      "sha256": "9af4ed1f676db62266b8cdc737c5e17c1c3ab732cd468af565214dc20869f67c"
+    },
+    {
+      "path": "tests/test_jetarm_vla_writer.py",
+      "sha256": "513e19f066e24a553bd50427afc8e8ada6d4b536805e019ea6e9c68ef4eafb95"
+    },
+    {
+      "path": "tests/test_mock_api.py",
+      "sha256": "4369ecbe4894df4b49d3953688d0e5e2ba13eadf3ae8ebfd0c416906bf23aa2b"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "ad01b6daaeb5b47ae8e5f4e43fa8025fea431076c6048486aa16eb80d7ff7a18"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "101aa985d7bdd2ace1556f8abb582f2898d30384ee39f35222a753a4cd8cc5ca"
+    }
+  ],
+  "source_mapping": [
+    {
+      "source": "参考项目和旧方案/jetarm_vla/CMakeLists.txt",
+      "path": "CMakeLists.txt",
+      "source_sha256": "92fd1a8e0fc86c7f9f82ed494143f263460fdea422c16fd2888d4aa1981685ad",
+      "release_sha256": "92fd1a8e0fc86c7f9f82ed494143f263460fdea422c16fd2888d4aa1981685ad"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/__init__.py",
+      "path": "gpu/__init__.py",
+      "source_sha256": "4ef52be21290f71ff502522183d53fd752a7cb6d00231db57ce231bee6fc8ebd",
+      "release_sha256": "4ef52be21290f71ff502522183d53fd752a7cb6d00231db57ce231bee6fc8ebd"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/convert_raw_to_lerobot.py",
+      "path": "gpu/convert_raw_to_lerobot.py",
+      "source_sha256": "0a9ed98bd659c79726c81c4cd3a4d1dbd064e27958e67b35094fd1d78e9fcfbd",
+      "release_sha256": "25b061173e6b216fb4d79f085743e77c5f1a80c65185999b38ab725001376563"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/dataloader_smoke.py",
+      "path": "gpu/dataloader_smoke.py",
+      "source_sha256": "e05bdb1ec3b7d8f043d72f1ea6546c78ed383d19bd7410499effa5bb3033fca9",
+      "release_sha256": "e05bdb1ec3b7d8f043d72f1ea6546c78ed383d19bd7410499effa5bb3033fca9"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/merge_raw_datasets.py",
+      "path": "gpu/merge_raw_datasets.py",
+      "source_sha256": "aa13e2491b521e52a5458366eeaa1b547f87f49dfb4993b3a0d8210d563dc1af",
+      "release_sha256": "aa13e2491b521e52a5458366eeaa1b547f87f49dfb4993b3a0d8210d563dc1af"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/prepare_env.sh",
+      "path": "gpu/prepare_env.sh",
+      "source_sha256": "77f160ae82d034c1c7c1c935f26aa67d77d745119448981e26040d83ab73ee1c",
+      "release_sha256": "056ad99be3a2677d4effc07bf5c93ad9143439f9c48b1c82fe8aea9dfefc3628"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/run_server.sh",
+      "path": "gpu/run_server.sh",
+      "source_sha256": "3dec6724118dc0415a3157a0a406eb036f6198434fe367f854d334cbc1f0f77b",
+      "release_sha256": "fa1922e307fcc60d4e70af2ba374c4cceb5cf1b3541581fab3f1b50f72d2bec7"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/server.py",
+      "path": "gpu/server.py",
+      "source_sha256": "de5df3e57d951ab0a94d7bc0e34c29d2b74f85d2cff068abea24c000c26cbb18",
+      "release_sha256": "789e5f58651c3d35db4e511e8154c2cb2bd8eee78fd0d7bb196df4c5231c6940"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/smoke_server.sh",
+      "path": "gpu/smoke_server.sh",
+      "source_sha256": "cc1b3f2b5cca26e042c5ea13982045cf8f607afd9dcdea3d68f2761fd12a321f",
+      "release_sha256": "81e0f88b50ce2c1946ef8130fb791a73859b3e49881c80f8d1c8356d44b96141"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/start_vla_server.sh",
+      "path": "gpu/start_vla_server.sh",
+      "source_sha256": "4d3ffa5651576e0a7852635a6c86364049c0c103ed367e1f6ac8b36b13aaec16",
+      "release_sha256": "c09fae4e620c540aaee39646d2d404f6b1698aafd4baecd7cfca29e3deb87983"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/summarize_eval.py",
+      "path": "gpu/summarize_eval.py",
+      "source_sha256": "8c16520b665452198c4541019e59973d846b9da3c89f69b5f6946d568fa20c6f",
+      "release_sha256": "8c16520b665452198c4541019e59973d846b9da3c89f69b5f6946d568fa20c6f"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/train_smolvla.sh",
+      "path": "gpu/train_smolvla.sh",
+      "source_sha256": "497744bef87716b6ab7da722b6a0ac149012f843299418e43e42e8feba98434a",
+      "release_sha256": "a774a2404fa1864a999ceb3b29451840758a28c7dd7e8c431c0f4bf71fde86f9"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/gpu/validate_dataset.py",
+      "path": "gpu/validate_dataset.py",
+      "source_sha256": "780154c83c3f761c3b071292e6d00f2b5f2772aa695c152a17d80402fecb8759",
+      "release_sha256": "780154c83c3f761c3b071292e6d00f2b5f2772aa695c152a17d80402fecb8759"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/launch/capture.launch",
+      "path": "launch/capture.launch",
+      "source_sha256": "3f1080b8467dfb1ea899350ea5d5d3bfd83a3036568469733e6968a20b4e5446",
+      "release_sha256": "b2ef0ef00debcebccc3cfe8dcc9a36614f866550a02f7a5b3bd6d3389cc08f92"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/launch/client.launch",
+      "path": "launch/client.launch",
+      "source_sha256": "961db21986f42d960015664f0adbeb692a83780b3c887886c001b07094c76b83",
+      "release_sha256": "de0a65c6067acf698f66d7ba7f8351c670050f1bb8ce1d3f6f129a6358d5ee2d"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/package.xml",
+      "path": "package.xml",
+      "source_sha256": "a4bb19fdf9290155488e77206e88253b17fb4b41942821ee6f3ae7b03ac44bc3",
+      "release_sha256": "5f69182af9823133f9a15ac8da463b9c255159c75280dddad4667ccf764db311"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/batch_expert_collect.py",
+      "path": "scripts/batch_expert_collect.py",
+      "source_sha256": "ca71eab5aef0af3b81d8a3d4206fcf8447fe44eec045025dec407bc7359a850e",
+      "release_sha256": "e5881d4ef8c8b272c140c25c1ce43b094fc962872034717a475724cab956d8bf"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/batch_rollout_collect.py",
+      "path": "scripts/batch_rollout_collect.py",
+      "source_sha256": "86d4a82210d1febdc2cd55ac2d5285bce0f856791b283c75145a7261425bc515",
+      "release_sha256": "9cce41f2352c0ec3fcfc427628b5c5433946492a5eb8006bffd534ce10ef2c87"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/jetarm_vla_capture.py",
+      "path": "scripts/jetarm_vla_capture.py",
+      "source_sha256": "5ff6c4f3b173bf25ba5bede99d241d8de7737f2ac705f472f6ca5251241fd846",
+      "release_sha256": "31d941aff047fe6cff3f95ac8aed47291089042e3bb1416a820f953c5fa9b49e"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/jetarm_vla_client.py",
+      "path": "scripts/jetarm_vla_client.py",
+      "source_sha256": "68170c2329303373dce97cde197c1af7eb62a05acc887df826e20526c61984dc",
+      "release_sha256": "bc1c34af7aa17a4219e7c4b0fe333118900bd482736d51f0d5725d1f16b27cf9"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/label_rollouts.py",
+      "path": "scripts/label_rollouts.py",
+      "source_sha256": "be82ed8a88f55282bd18ebc85d0057ee19de3a629c15b2155c827b21ddf44f40",
+      "release_sha256": "3095bfabf5a5fb1b0f1b069a03a8271cb9fa6b272bf19ef914f3f93c315cc54c"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla/scripts/start_vla_tunnel.sh",
+      "path": "scripts/start_vla_tunnel.sh",
+      "source_sha256": "524ccfeb70048e5969a0fee0b16ac0d4125c78268879368f492abeb5ee286a18",
+      "release_sha256": "ff40204bd2dba373800493d1831875cc8527939b0fb8e7b04609101d924f0a5c"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/__init__.py",
+      "path": "jetarm_vla_common/__init__.py",
+      "source_sha256": "c0e8627ac9bb81991ac71f3bc4b66cd1b7aa4fabeba151c24aa30bf9d59e3f65",
+      "release_sha256": "c0e8627ac9bb81991ac71f3bc4b66cd1b7aa4fabeba151c24aa30bf9d59e3f65"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/dataset_writer.py",
+      "path": "jetarm_vla_common/dataset_writer.py",
+      "source_sha256": "648fb06fa585eb3fd968c2c594f9ca61849dd9e1784346e59cf8ea8436711774",
+      "release_sha256": "648fb06fa585eb3fd968c2c594f9ca61849dd9e1784346e59cf8ea8436711774"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/depth.py",
+      "path": "jetarm_vla_common/depth.py",
+      "source_sha256": "f25b9752e9c1bc16ccf4ccb872defbf9478efa3500b4517ad96b88cb4fd14caf",
+      "release_sha256": "f25b9752e9c1bc16ccf4ccb872defbf9478efa3500b4517ad96b88cb4fd14caf"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/images.py",
+      "path": "jetarm_vla_common/images.py",
+      "source_sha256": "87c418fa6433e818bd127ec21e16d2764de4587a54518be885298eb2c38038f7",
+      "release_sha256": "87c418fa6433e818bd127ec21e16d2764de4587a54518be885298eb2c38038f7"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/safety.py",
+      "path": "jetarm_vla_common/safety.py",
+      "source_sha256": "ff2f1c67ec53e892aa6b9a059817e5c1160bc82669ad4402e1ff2a17315c0511",
+      "release_sha256": "ff2f1c67ec53e892aa6b9a059817e5c1160bc82669ad4402e1ff2a17315c0511"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_vla_common/schema.py",
+      "path": "jetarm_vla_common/schema.py",
+      "source_sha256": "cdb4cbf59b60db00bf0df020fdc9144465240d32c64315f35ebff0726c27f20c",
+      "release_sha256": "cdb4cbf59b60db00bf0df020fdc9144465240d32c64315f35ebff0726c27f20c"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_convert_raw_to_lerobot_filters.py",
+      "path": "tests/test_convert_raw_to_lerobot_filters.py",
+      "source_sha256": "c8eec0ac938ef3194f3293e4ec34daeeb52428b6a7436d4e419f2e4dab7726cb",
+      "release_sha256": "397120bef3bcf4a823dae305cb53a14956d42c64e962ad086664f7f895d7973e"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_jetarm_vla_depth.py",
+      "path": "tests/test_jetarm_vla_depth.py",
+      "source_sha256": "45d5a4023811db96c057d45ce64a019044f06af0f8c6cd560915cd5e0879ce3d",
+      "release_sha256": "45d5a4023811db96c057d45ce64a019044f06af0f8c6cd560915cd5e0879ce3d"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_jetarm_vla_images.py",
+      "path": "tests/test_jetarm_vla_images.py",
+      "source_sha256": "2511cf81f8abbc04fffb1916e05bf68349f9e4e8990e0aac8c949aa7e61b2d86",
+      "release_sha256": "2511cf81f8abbc04fffb1916e05bf68349f9e4e8990e0aac8c949aa7e61b2d86"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_jetarm_vla_safety.py",
+      "path": "tests/test_jetarm_vla_safety.py",
+      "source_sha256": "a652c0a75e1c68f0c23a32eca8b6f600a26a02d1e245ff0bf642544759c192a5",
+      "release_sha256": "a652c0a75e1c68f0c23a32eca8b6f600a26a02d1e245ff0bf642544759c192a5"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_jetarm_vla_schema.py",
+      "path": "tests/test_jetarm_vla_schema.py",
+      "source_sha256": "9af4ed1f676db62266b8cdc737c5e17c1c3ab732cd468af565214dc20869f67c",
+      "release_sha256": "9af4ed1f676db62266b8cdc737c5e17c1c3ab732cd468af565214dc20869f67c"
+    },
+    {
+      "source": "参考项目和旧方案/tests/test_jetarm_vla_writer.py",
+      "path": "tests/test_jetarm_vla_writer.py",
+      "source_sha256": "513e19f066e24a553bd50427afc8e8ada6d4b536805e019ea6e9c68ef4eafb95",
+      "release_sha256": "513e19f066e24a553bd50427afc8e8ada6d4b536805e019ea6e9c68ef4eafb95"
+    }
+  ],
+  "excluded": [
+    "jetarm_vla/docs/startup_report.md: host/user/path and unverified historical runtime statements",
+    "all bytecode, caches, datasets, models, logs and captures",
+    "all vendor archives, binaries, SDK sources and pretrained weights",
+    "test_agent_cli_full_control.py: belongs to a separately reviewed component"
+  ],
+  "vendor_comparison": {
+    "archives": [
+      {
+        "archive": "ROS1.zip",
+        "python_files_parsed": 145
+      },
+      {
+        "archive": "ROS2.zip",
+        "python_files_parsed": 252
+      }
+    ],
+    "exact_matches": [],
+    "limitation": "Exact file/function comparison is supporting evidence only, not an authorship or legal determination."
+  }
+}

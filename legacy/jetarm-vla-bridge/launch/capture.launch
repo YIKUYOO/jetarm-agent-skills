@@ -1,0 +1,27 @@
+<launch>
+  <arg name="output_dir" default="$(env HOME)/jetarm_vla_data/raw"/>
+  <arg name="episode_id" default="ep_smoke_000"/>
+  <arg name="instruction" default="pick the red block and place it in the box"/>
+  <arg name="fps" default="10"/>
+  <arg name="duration_s" default="30"/>
+  <arg name="success" default="false"/>
+  <arg name="failure_reason" default="not_labeled"/>
+  <arg name="query_ee_pose" default="false"/>
+  <arg name="capture_source" default="manual"/>
+  <arg name="writer_queue_size" default="20"/>
+  <arg name="png_compress_level" default="1"/>
+
+  <node pkg="jetarm_vla" type="jetarm_vla_capture.py" name="jetarm_vla_capture" output="screen">
+    <param name="output_dir" value="$(arg output_dir)"/>
+    <param name="episode_id" value="$(arg episode_id)"/>
+    <param name="instruction" value="$(arg instruction)"/>
+    <param name="fps" value="$(arg fps)"/>
+    <param name="duration_s" value="$(arg duration_s)"/>
+    <param name="success" value="$(arg success)"/>
+    <param name="failure_reason" value="$(arg failure_reason)"/>
+    <param name="query_ee_pose" value="$(arg query_ee_pose)"/>
+    <param name="capture_source" value="$(arg capture_source)"/>
+    <param name="writer_queue_size" value="$(arg writer_queue_size)"/>
+    <param name="png_compress_level" value="$(arg png_compress_level)"/>
+  </node>
+</launch>

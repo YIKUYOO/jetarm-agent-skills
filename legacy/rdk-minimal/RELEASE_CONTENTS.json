@@ -1,0 +1,122 @@
+{
+  "verification_date": "2026-10-08",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "78bd41d8f6330aac728a43e5e26eeeb6d48dfb953ef36f74f7b805d44e24e73f"
+    },
+    {
+      "path": "board/jetarm_action.py",
+      "sha256": "942122c8698f78549c317653940fe6b500cd89c35bc5187537044eb6060ceba5"
+    },
+    {
+      "path": "board/jetarm_core.sh",
+      "sha256": "eb363c9aef333b968a141726750c8557b5f29a4e1aa593b7947bad85f4dc2c6c"
+    },
+    {
+      "path": "board/jetarm_env.sh",
+      "sha256": "e4b95ad8845aff1e922ec29d50e9b5e1582976e7da367170367e0d8ca8c3d7e7"
+    },
+    {
+      "path": "board/jetarm_status.sh",
+      "sha256": "8583f7c9a3ada9c738e9e87e6b9ffe8d89b4f2705e420fcceceeb95b2a670a2d"
+    },
+    {
+      "path": "local/rdk_minimal.py",
+      "sha256": "1dd15acf14d89bfb5f1e06491e2b7c7873f948692a7bb2f75478cac823b63405"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead"
+    },
+    {
+      "path": "README.md",
+      "sha256": "49e04e6e489810729287cd24d719fdc3e6faafb084a38627a470326b2892fbc5"
+    },
+    {
+      "path": "requirements-offline.txt",
+      "sha256": "cddd5376add59a6200e8d6b763949a02428959b44ac01e11370906b30f73c2d1"
+    },
+    {
+      "path": "tests/test_action_guard.py",
+      "sha256": "97137fdaa69f9bcd1c9264145c27f17a64db895e910bed599d470555363aa716"
+    },
+    {
+      "path": "tests/test_status_parser.py",
+      "sha256": "fa3373c4a2018115cc8b1abf0280aaec477682a8a19c5435bc4b87167c078756"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "a93da1355cf3ad725675d2293de0f104005d9462d1dcd7cc764ee51433f84b97"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "1ec5152338d92909d87f97cc3c975ef522fbffa5691dc50434f211b4c725c223"
+    }
+  ],
+  "source_mapping": [
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/board/jetarm_action.py",
+      "path": "board/jetarm_action.py",
+      "source_sha256": "942122c8698f78549c317653940fe6b500cd89c35bc5187537044eb6060ceba5",
+      "release_sha256": "942122c8698f78549c317653940fe6b500cd89c35bc5187537044eb6060ceba5"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/board/jetarm_core.sh",
+      "path": "board/jetarm_core.sh",
+      "source_sha256": "eb363c9aef333b968a141726750c8557b5f29a4e1aa593b7947bad85f4dc2c6c",
+      "release_sha256": "eb363c9aef333b968a141726750c8557b5f29a4e1aa593b7947bad85f4dc2c6c"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/board/jetarm_env.sh",
+      "path": "board/jetarm_env.sh",
+      "source_sha256": "27c650393bf7af0aafe4f0a1f4b086ebaf13a50cbf6f9b57a4335b95cdeab8ea",
+      "release_sha256": "e4b95ad8845aff1e922ec29d50e9b5e1582976e7da367170367e0d8ca8c3d7e7"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/board/jetarm_status.sh",
+      "path": "board/jetarm_status.sh",
+      "source_sha256": "8583f7c9a3ada9c738e9e87e6b9ffe8d89b4f2705e420fcceceeb95b2a670a2d",
+      "release_sha256": "8583f7c9a3ada9c738e9e87e6b9ffe8d89b4f2705e420fcceceeb95b2a670a2d"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/local/rdk_minimal.py",
+      "path": "local/rdk_minimal.py",
+      "source_sha256": "68e34e726c9ab8c0557866a79649d9e1feccca23fa9f83e0674084fc95b2a820",
+      "release_sha256": "1dd15acf14d89bfb5f1e06491e2b7c7873f948692a7bb2f75478cac823b63405"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/tests/test_action_guard.py",
+      "path": "tests/test_action_guard.py",
+      "source_sha256": "97137fdaa69f9bcd1c9264145c27f17a64db895e910bed599d470555363aa716",
+      "release_sha256": "97137fdaa69f9bcd1c9264145c27f17a64db895e910bed599d470555363aa716"
+    },
+    {
+      "source": "参考项目和旧方案/jetarm_rdkx5_minimal/tests/test_status_parser.py",
+      "path": "tests/test_status_parser.py",
+      "source_sha256": "5ba2cae97874aa50561f192fd17e68bf867eace1df890ac5c9ed39303c1b5251",
+      "release_sha256": "fa3373c4a2018115cc8b1abf0280aaec477682a8a19c5435bc4b87167c078756"
+    }
+  ],
+  "excluded": [
+    "jetarm_vla/docs/startup_report.md: host/user/path and unverified historical runtime statements",
+    "all bytecode, caches, datasets, models, logs and captures",
+    "all vendor archives, binaries, SDK sources and pretrained weights",
+    "test_agent_cli_full_control.py: belongs to a separately reviewed component"
+  ],
+  "vendor_comparison": {
+    "archives": [
+      {
+        "archive": "ROS1.zip",
+        "python_files_parsed": 145
+      },
+      {
+        "archive": "ROS2.zip",
+        "python_files_parsed": 252
+      }
+    ],
+    "exact_matches": [],
+    "limitation": "Exact file/function comparison is supporting evidence only, not an authorship or legal determination."
+  }
+}

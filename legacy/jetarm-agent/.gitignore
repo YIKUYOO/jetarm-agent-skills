@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+doc/account.txt
+account.txt
+logs/
+captures/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+known_hosts*

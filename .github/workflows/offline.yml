@@ -1,7 +1,9 @@
 name: Offline validation
 on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
 jobs:
-  offline:
+  main-offline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -9,4 +11,40 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-dev.txt
-      - run: python -m pytest -q
+      - run: python -B -m pytest -q -p no:cacheprovider
+  legacy-agent-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: legacy/jetarm-agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -B -m pytest -q -p no:cacheprovider
+  legacy-vla-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: legacy/jetarm-vla-bridge
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-offline.txt
+      - run: python -B -m pytest -q -p no:cacheprovider
+  legacy-minimal-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: legacy/rdk-minimal
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-offline.txt
+      - run: python -B -m pytest -q -p no:cacheprovider

@@ -1,0 +1,38 @@
+{
+  "profile_name": "bench_red_block_v1",
+  "camera_frame": "rgbd_cam_color_optical_frame",
+  "base_frame": "base_link",
+  "offsets": {
+    "pick": {},
+    "place": {}
+  },
+  "workcell": {
+    "allowed_object_classes": ["color_block"],
+    "destination_zones": {
+      "left_bin": {
+        "frame": "base_link",
+        "x": 0.25,
+        "y": 0.12,
+        "z": 0.08
+      },
+      "sorting_bin_red": {
+        "frame": "base_link",
+        "x": 0.25,
+        "y": 0.12,
+        "z": 0.08
+      }
+    }
+  },
+  "observation": {
+    "default_target_color": "red",
+    "minimum_confidence": 0.5,
+    "max_target_age_seconds": 5.0,
+    "mode": "fixed_front"
+  },
+  "metadata": {
+    "status": "verified_frozen",
+    "validated_on": "2026-04-02",
+    "default_destination_zone": "left_bin",
+    "notes": "Current active-board fixed-front red color-block profile used by formal Phase 2 smokes."
+  }
+}

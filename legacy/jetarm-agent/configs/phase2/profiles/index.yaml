@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "active_profile": "bench_red_block_v1",
+  "profiles": [
+    {
+      "profile_name": "bench_red_block_v1",
+      "path": "bench_red_block_v1.yaml",
+      "status": "verified_frozen",
+      "description": "Current active-board front red-block workcell profile used by Phase 2 smokes."
+    },
+    {
+      "profile_name": "bench_red_block_draft_v0",
+      "path": "bench_red_block_draft_v0.yaml",
+      "status": "documented_not_verified",
+      "description": "Draft second profile kept as a multi-profile shell; not validated for formal execution."
+    }
+  ]
+}

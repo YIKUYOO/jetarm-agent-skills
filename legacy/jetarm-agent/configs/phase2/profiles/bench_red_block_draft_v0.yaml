@@ -1,0 +1,32 @@
+{
+  "profile_name": "bench_red_block_draft_v0",
+  "camera_frame": "rgbd_cam_color_optical_frame",
+  "base_frame": "base_link",
+  "offsets": {
+    "pick": {},
+    "place": {}
+  },
+  "workcell": {
+    "allowed_object_classes": ["color_block"],
+    "destination_zones": {
+      "sorting_bin_red": {
+        "frame": "base_link",
+        "x": 0.25,
+        "y": 0.12,
+        "z": 0.08
+      }
+    }
+  },
+  "observation": {
+    "default_target_color": "red",
+    "minimum_confidence": 0.55,
+    "max_target_age_seconds": 5.0,
+    "mode": "fixed_front"
+  },
+  "metadata": {
+    "status": "documented_not_verified",
+    "validated_on": "2026-04-02",
+    "default_destination_zone": "sorting_bin_red",
+    "notes": "Draft second profile kept only to establish the Phase 2 multi-profile loading shell."
+  }
+}

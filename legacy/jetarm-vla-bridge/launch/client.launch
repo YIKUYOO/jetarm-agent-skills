@@ -1,0 +1,33 @@
+<launch>
+  <arg name="server_url" default="http://127.0.0.1:18008/select_action"/>
+  <arg name="instruction" default="pick the red block and place it in the box"/>
+  <arg name="dry_run" default="false"/>
+  <arg name="rate_hz" default="0.05"/>
+  <arg name="request_timeout_s" default="25"/>
+  <arg name="max_step" default="0.02"/>
+  <arg name="action_duration_ms" default="1000"/>
+  <arg name="record_rollout" default="true"/>
+  <arg name="record_rejected" default="true"/>
+  <arg name="output_dir" default="$(env HOME)/jetarm_vla_data/rollouts/raw"/>
+  <arg name="episode_id" default=""/>
+  <arg name="success" default="false"/>
+  <arg name="failure_reason" default="not_labeled"/>
+  <arg name="emergency_stop" default="false"/>
+
+  <node pkg="jetarm_vla" type="jetarm_vla_client.py" name="jetarm_vla_client" output="screen">
+    <param name="server_url" value="$(arg server_url)"/>
+    <param name="instruction" value="$(arg instruction)"/>
+    <param name="dry_run" value="$(arg dry_run)"/>
+    <param name="rate_hz" value="$(arg rate_hz)"/>
+    <param name="request_timeout_s" value="$(arg request_timeout_s)"/>
+    <param name="max_step" value="$(arg max_step)"/>
+    <param name="action_duration_ms" value="$(arg action_duration_ms)"/>
+    <param name="record_rollout" value="$(arg record_rollout)"/>
+    <param name="record_rejected" value="$(arg record_rejected)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+    <param name="episode_id" value="$(arg episode_id)"/>
+    <param name="success" value="$(arg success)"/>
+    <param name="failure_reason" value="$(arg failure_reason)"/>
+    <param name="emergency_stop" value="$(arg emergency_stop)"/>
+  </node>
+</launch>
