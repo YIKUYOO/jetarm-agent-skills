@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Reconstructed configuration example from the migration record, not a vendor file.
+# Install at $JETARM_WS/jetarm_rdk_env.sh only after adapting to your own workspace.
+set +u
+if [ -f /opt/tros/humble/setup.bash ]; then
+  source /opt/tros/humble/setup.bash
+elif [ -f /opt/ros/humble/setup.bash ]; then
+  source /opt/ros/humble/setup.bash
+else
+  echo 'Install the required ROS2/TROS runtime first.' >&2
+  return 1 2>/dev/null || exit 1
+fi
+export need_compile="${need_compile:-True}"
+export CAMERA_TYPE="${CAMERA_TYPE:-GEMINI}"
+export CHASSIS_TYPE="${CHASSIS_TYPE:-None}"
+export RMW_IMPLEMENTATION="${RMW_IMPLEMENTATION:-rmw_fastrtps_cpp}"

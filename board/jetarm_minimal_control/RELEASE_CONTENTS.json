@@ -1,0 +1,120 @@
+{
+  "release": "v0.3.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 78,
+      "sha256": "4ad6db6c9aa3f7c4d8107adfae6e66dd54bf837c8ef8cd64cfd4c82bea09dcaa"
+    },
+    {
+      "path": "integration/readback_guard.py",
+      "bytes": 531,
+      "sha256": "1861122174b9183fe0378e636649bbfaf7a13918fabc4e8f991446dffd4d1a00"
+    },
+    {
+      "path": "integration/README.md",
+      "bytes": 1681,
+      "sha256": "001f98e6273997c227e691e1c85d17f6996b4de7b4878181ac92f668a4d56d9a"
+    },
+    {
+      "path": "jetarm_minimal_control/__init__.py",
+      "bytes": 49,
+      "sha256": "f82c1dcd8bced47f0ae3bad493242eaf3705bafaac2030cd31064cd885c393c6"
+    },
+    {
+      "path": "jetarm_minimal_control/action_runner.py",
+      "bytes": 2932,
+      "sha256": "451d0b23f1cbb9360025c2556bdd84effd78c5c926bcf150a7130da879e6bdc6"
+    },
+    {
+      "path": "jetarm_minimal_control/preset_server.py",
+      "bytes": 3541,
+      "sha256": "0564521347793faffd5fb59e25614f53bb1f0c45702abc5bbf05434f6c5a7a9f"
+    },
+    {
+      "path": "jetarm_minimal_control/presets.py",
+      "bytes": 5956,
+      "sha256": "ea600eff2a96f8c379aa94acaadb8f7e3612e94fd3028e469f188ff8eda8345f"
+    },
+    {
+      "path": "jetarm_minimal_control/safe_nudge.py",
+      "bytes": 5185,
+      "sha256": "ea18076b35f4c0028050de4c58ff538b51e71dce4c56f553812c99f26c6477d2"
+    },
+    {
+      "path": "jetarm_minimal_control/status_check.py",
+      "bytes": 4959,
+      "sha256": "18b129c113fabeab751e79c988d8900a72c9c0631700bc076e799226f5023301"
+    },
+    {
+      "path": "launch/control_bringup.launch.py",
+      "bytes": 5216,
+      "sha256": "2bc539592f5ee77b9d94918d8a5830a818fdb7e94801d7a5e8a150dd60a35ca4"
+    },
+    {
+      "path": "launch/legacy_depth_camera.launch.py",
+      "bytes": 3066,
+      "sha256": "e4be7597f3c21e3934d14d48b49429a53415206e9d0a9cdbbcb9f27d1b879e84"
+    },
+    {
+      "path": "launch/minimal_control.launch.py",
+      "bytes": 804,
+      "sha256": "2cba1633ef0ecc6943562cf8bf7e9c13eebd7ccbe6b159077dee0eaa760ec157"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1089,
+      "sha256": "1e3f1c6eda6227fa329af8fec0f91ef43eea0dfc6ab7108cea1087cf34049f24"
+    },
+    {
+      "path": "package.xml",
+      "bytes": 1171,
+      "sha256": "66b3afd52a195c701c1aa8b901d7a469bd2752661cd8a85e6ed80a82082ae405"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 27,
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5231,
+      "sha256": "8b046f8061e85262c89c5182909b93504f1de932caa4762fd0284547a86f0d1f"
+    },
+    {
+      "path": "requirements-offline.txt",
+      "bytes": 14,
+      "sha256": "26db60f3749b2d582ef13e54530725d1038086c5b72953678670871c2b85e15a"
+    },
+    {
+      "path": "resource/jetarm_minimal_control",
+      "bytes": 23,
+      "sha256": "75fd552cf34133d70f8ce3ff7e59f584a9539f2b8f845873acfa718bb03814de"
+    },
+    {
+      "path": "setup.cfg",
+      "bytes": 113,
+      "sha256": "dc1571ed16cbe09ed89d0f830c49d4e901473d75cabbed7411a7f574b27fc5f3"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 1142,
+      "sha256": "007dbcd0a22df7bbe952b09369e2295fd463a8200ee33b43de02ae08a599ccda"
+    },
+    {
+      "path": "tests/test_offline_contracts.py",
+      "bytes": 3582,
+      "sha256": "e470932d7018d593c930a5929fc05b01006430a3c2cb8951c4c19a03949fe1dc"
+    },
+    {
+      "path": "tests/test_readback_guard.py",
+      "bytes": 987,
+      "sha256": "782e1540bbd4812e11e8af8d7b8ac1a4cc094c97dd9b8f10a26e3a34b671dbdb"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1620,
+      "sha256": "38442a6afb4d82cbbb32ff58526b49f7fd4ceaa6baacd86a2f5f46b2301cb6d3"
+    }
+  ]
+}

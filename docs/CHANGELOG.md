@@ -1,3 +1,11 @@
+# 0.3.0 recovered board package and source inventory — 2026-10-08
+
+- Added the recovered `jetarm_minimal_control` ROS2 package: four entry points, three launch files, authored validation/service wrappers and attributed vendor posture parameters. The deployment source behavior is retained; account metadata and omitted launch dependency declarations are corrected.
+- Added the separately authored board-local full-control CLI and its three skills, and the twelve earlier RDK migration/diagnostic scripts. The CLI's private provider endpoint and third-party automatic installer are removed; the replacement installer keeps existing installations intact.
+- Preserved an isolated authored unsigned-readback helper with integration notes instead of redistributing the patched manufacturer driver. Added reconstructed environment setup and explicit external SDK/camera/configuration dependencies.
+- Added three independent CI jobs: full-control CLI 8 checks (7 historical plus 1 public configuration check), migration tools 6 new checks, board package 12 new checks (10 preset/action and 2 readback checks), plus Python/Bash syntax validation. The four earlier suites remain separate and unchanged.
+- Documented the seven-component source scope and exclusions. Raw full-control behavior, ROS-connected dry-run commands and historical hardware limitations remain explicit. No ROS build, hardware motion, training acceptance or software copyright registration is claimed by these offline checks.
+
 # 0.2.0 experimental archive expansion — 2026-10-08
 
 - Added three sanitized project archives: the Jetson/ROS1 Web agent, RGB-D data/VLA-interface bridge, and minimal RDK X5 wrapper. The main helper implementation and draft plugin version remain 0.1.0.

@@ -1,0 +1,95 @@
+{
+  "release": "v0.3.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 45,
+      "sha256": "84b16784cc406f7ec9c912f12ed2162a31b07640bc14ef82444285871e774085"
+    },
+    {
+      "path": "config/jetarm_rdk_env.sh.example",
+      "bytes": 658,
+      "sha256": "bbf110922085c0ca9101d731ec3759dcf6e6c0fcc1c9e4930773cb7cb0c88c25"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 27,
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4618,
+      "sha256": "ef166dfc13a1902f77bd29b943f7668a8fa7497353748804062c54f8c646d565"
+    },
+    {
+      "path": "requirements-offline.txt",
+      "bytes": 14,
+      "sha256": "26db60f3749b2d582ef13e54530725d1038086c5b72953678670871c2b85e15a"
+    },
+    {
+      "path": "tests/test_offline_wrappers.py",
+      "bytes": 2996,
+      "sha256": "dddfd389f0d05c38f203519a1e939bce7f7b3961a94c6865e3a753a69ab316c9"
+    },
+    {
+      "path": "tools/jetarm_bringup_core.sh",
+      "bytes": 901,
+      "sha256": "2d5197bd56adb75ed28380b73573a2cc0097b5e24833be2f7a4e67a531894d81"
+    },
+    {
+      "path": "tools/jetarm_bringup_rgb.sh",
+      "bytes": 1004,
+      "sha256": "2658d30fbf6e6209dc362c1a9017cb18673c12355f60c9a749b1a650979aad81"
+    },
+    {
+      "path": "tools/jetarm_capture_observation.py",
+      "bytes": 8062,
+      "sha256": "6b12403426a3bf8fafb2a73fec40a1ae3894b5c041f7d86f58620ae679228857"
+    },
+    {
+      "path": "tools/jetarm_capture_rgb_once.py",
+      "bytes": 3377,
+      "sha256": "38e588758aa093a00855d8b6606f7d459c43ae60e25c8170f5c9ac62794581e5"
+    },
+    {
+      "path": "tools/jetarm_cleanup.sh",
+      "bytes": 882,
+      "sha256": "805b2bffe571c5852ec24412c7c9af39b8c254f6772324f8c2ee8182fd267434"
+    },
+    {
+      "path": "tools/jetarm_env.sh",
+      "bytes": 438,
+      "sha256": "ad3993ebd5dc413c979d65875c482c24dbf4ec7ca9dbfdea64812522f8af7163"
+    },
+    {
+      "path": "tools/jetarm_joint_nudge_test.py",
+      "bytes": 5712,
+      "sha256": "d548ca430febaa2fb9154af49c8c654766f0a35593bd575a8ff4b9b3860d0fa1"
+    },
+    {
+      "path": "tools/jetarm_minimal_verify.sh",
+      "bytes": 4260,
+      "sha256": "b816cdf6a3c16ecbf1e0291797ae5e87be7c64529fc83bb079df38b9296bb169"
+    },
+    {
+      "path": "tools/jetarm_probe_control_port.py",
+      "bytes": 7115,
+      "sha256": "ee1837002f27765b93ef37c3327e891ef9f766512c343baabed92c1101213469"
+    },
+    {
+      "path": "tools/jetarm_safe_servo_move.py",
+      "bytes": 3746,
+      "sha256": "a56b2c77b68a0bb00237434304ee97fbcabeb528f9aea525d40345ec6be97123"
+    },
+    {
+      "path": "tools/jetarm_status.sh",
+      "bytes": 2262,
+      "sha256": "4f8cdcd759d115526782cd8a65161b492876aeb265ac83832242633b139efaed"
+    },
+    {
+      "path": "tools/jetarm_wait_for_hardware.sh",
+      "bytes": 1244,
+      "sha256": "62e3029722cc2f4cdbbaf6301407785cb9a08d786c177fe5fa92fe61a9319a8b"
+    }
+  ]
+}

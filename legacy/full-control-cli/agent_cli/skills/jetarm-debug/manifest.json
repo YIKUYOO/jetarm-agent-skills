@@ -1,0 +1,10 @@
+{
+  "name": "jetarm-debug",
+  "description": "Inspect JetArm ROS, topics, services, launch state, camera, logs, and recovery state with full-control tools.",
+  "version": "0.1.0",
+  "source": "project",
+  "allowed_tools": ["shell", "ros", "rostopic", "rosservice", "python_script", "camera_frame", "stop_all"],
+  "risk_level": "critical",
+  "install_state": "active",
+  "review_notes": "Project-bundled full-control debugging skill."
+}

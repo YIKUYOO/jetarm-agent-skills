@@ -2,7 +2,7 @@
 
 Experimental, evidence-oriented JetArm / RDK X5 helpers for a Codex skill workflow: inspect state, capture RGB-D and side views, plan a bounded tabletop action, and evaluate the visible result.
 
-This is a research software snapshot. Release **v0.2.0** adds three separately documented historical software archives; the current RDK X5 helpers and draft plugin retain version **0.1.0**. The main branch contains 13 original task scripts plus one shared SSH/safety helper, four skill definitions, and 20 offline regression tests. No trained VLA policy, autonomous general-purpose grasping system, robot simulator, or manufacturer ROS workspace is included.
+This is a research software snapshot. Release **v0.3.0** completes the source inventory with the actual `jetarm_minimal_control` board package, the separate board-local CLI and twelve earlier RDK migration scripts, in addition to the three archives added in v0.2.0. The current RDK X5 helpers and draft plugin retain version **0.1.0**. The main branch contains 13 original task scripts plus one shared SSH/safety helper, four skill definitions, and 20 offline regression tests. No trained VLA policy, autonomous general-purpose grasping system, robot simulator, or manufacturer ROS workspace is included.
 
 ## What has been demonstrated
 
@@ -56,21 +56,25 @@ Before explicitly enabling motion: verify a clear workcell, one control stack, v
 - `docs/`: maturity boundaries, provenance and release changes.
 - `tests/`: offline guards, synthetic perception and syntax regression checks.
 - `legacy/`: independently tested historical ROS1/Web, RGB-D data/interface, and minimal ROS2 wrappers; see below.
+- `board/jetarm_minimal_control/`: recovered authored ROS2 launch, status, preset service/action and nudge package used by the historical RDK experiments; vendor dependencies are separate.
 
 Use the skill files directly from a skill-aware agent. Installing the draft plugin depends on your host's supported plugin format.
 
-## Historical software archives in v0.2.0
+## Board package and historical software archives
 
 | Directory | Retained scope | Independent offline tests | License |
 | --- | --- | --- | --- |
 | [legacy/jetarm-agent](legacy/jetarm-agent) | March–April Jetson/ROS1 Web, LLM/VLM integration, plans, SSH and board adapters | 194 historical + 2 upload-privacy checks = 196 | Nested ISC |
 | [legacy/jetarm-vla-bridge](legacy/jetarm-vla-bridge) | RGB-D capture/data format, annotation/conversion scaffolding, HTTP and hold-pose mock | 12 historical + 4 mock API checks = 16 | MIT |
 | [legacy/rdk-minimal](legacy/rdk-minimal) | Historical ROS2 status, SDK startup and servo-command wrapper | 8 historical | MIT |
+| [legacy/full-control-cli](legacy/full-control-cli) | Separate Jetson board-local chat/REPL, raw tools, transcript and three skills | 7 historical + 1 configuration check = 8 | MIT |
+| [legacy/rdk-migration-tools](legacy/rdk-migration-tools) | Twelve earlier ROS2 bringup, diagnostic, capture and motion scripts | 6 new offline checks; Python/Bash syntax | MIT |
+| [board/jetarm_minimal_control](board/jetarm_minimal_control) | Four board entry points, three launch files, nine preset descriptions and an authored readback guard | 10 new preset/action checks + 2 readback checks = 12; Python syntax | MIT for authored wrapper; vendor parameter attribution retained |
 
-Run each archive's installation and test command from its own directory and environment. The root `python -m pytest -q` intentionally collects only the 20 main-branch tests; CI runs four separate jobs. These counts describe software checks, not robot trials. The archives contain no raw experiment logs, private proposal/report files, photographs, training datasets or model weights. Mock VLA returns a bounded copy of the current state and does not interpret language or perform grasping. Optional training and checkpoint code is unvalidated experimental scaffolding.
+Run each component's installation and test command from its own directory and environment. The root `python -m pytest -q` intentionally collects only the 20 main-branch tests; CI runs seven separate jobs. These counts describe software checks, not robot trials. ROS message stubs and syntax checks do not establish a successful ROS build or hardware operation. The archives contain no raw experiment logs, private proposal/report files, photographs, training datasets or model weights. Mock VLA returns a bounded copy of the current state and does not interpret language or perform grasping. Optional training and checkpoint code is unvalidated experimental scaffolding.
 
-Public packaging removed private configuration and the legacy fixed image-upload proxy, made SSH host-key verification strict, and documented external vendor dependencies. These changes have only been checked offline. See the [release changes](docs/CHANGELOG.md) and each component's README for the remaining device and capability limitations.
+Public packaging removed private configuration and the legacy fixed image-upload proxy, made SSH host-key verification strict, and documented external vendor dependencies. These changes have only been checked offline. The recovered board package retains the deployment source's control behavior, while its metadata and dependency declarations are made explicit. See the [release scope](docs/RELEASE_SCOPE.md), [release changes](docs/CHANGELOG.md) and each component's README for provenance and remaining device/capability limitations.
 
 ## License
 
-Original main-branch material and the VLA/minimal wrappers are provided under the [MIT License](LICENSE). The earlier Web/ROS1 archive retains its separate [ISC License](legacy/jetarm-agent/LICENSE). Manufacturer SDKs, ROS, TROS, camera drivers and Python dependencies retain their own licenses and must be obtained separately. See [third-party boundaries](docs/THIRD_PARTY.md). This release makes no claim of software copyright registration.
+Original main-branch material, the recovered board package, VLA/minimal wrappers and the added CLI/migration archives are provided under the [MIT License](LICENSE). The earlier Web/ROS1 archive retains its separate [ISC License](legacy/jetarm-agent/LICENSE). Manufacturer SDKs, ROS, TROS, camera drivers and Python dependencies retain their own licenses and must be obtained separately. See [third-party boundaries](docs/THIRD_PARTY.md). This release makes no claim of software copyright registration.

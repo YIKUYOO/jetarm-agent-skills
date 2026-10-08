@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>jetarm_minimal_control</name>
+  <version>0.1.0</version>
+  <description>Minimal JetArm preset motion bridge for RDK X5 ROS2/TROS.</description>
+  <maintainer email="maintainers@example.invalid">JetArm contributors</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>interfaces</exec_depend>
+  <exec_depend>control_msgs</exec_depend>
+  <exec_depend>kinematics</exec_depend>
+  <exec_depend>orbbec_camera</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>ros_robot_controller</exec_depend>
+  <exec_depend>ros_robot_controller_msgs</exec_depend>
+  <exec_depend>servo_controller</exec_depend>
+  <exec_depend>servo_controller_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

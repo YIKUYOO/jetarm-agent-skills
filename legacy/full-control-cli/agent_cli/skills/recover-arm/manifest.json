@@ -1,0 +1,10 @@
+{
+  "name": "recover-arm",
+  "description": "Recover JetArm from uncertain workflow, servo, or grasp states using full-control stop and reset commands.",
+  "version": "0.1.0",
+  "source": "project",
+  "allowed_tools": ["stop_all", "go_home", "open_gripper", "shell", "ros", "rostopic", "rosservice"],
+  "risk_level": "critical",
+  "install_state": "active",
+  "review_notes": "Project-bundled full-control recovery skill."
+}

@@ -1,0 +1,75 @@
+{
+  "release": "v0.3.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 65,
+      "sha256": "24d4dc68125fcb4198dcedb5b45a3cf41288c128cc2d087ae147c3c6b0471bde"
+    },
+    {
+      "path": "agent_cli/bootstrap_jetson.sh",
+      "bytes": 1679,
+      "sha256": "e82eebce799ffed667e0c016169106580abd72373458c669003b0122227052d9"
+    },
+    {
+      "path": "agent_cli/jetarm_full_control_agent.py",
+      "bytes": 30118,
+      "sha256": "3b4d47803cc925c55fd9b53567d495a7bba086e6c87d873b15189bf49492acae"
+    },
+    {
+      "path": "agent_cli/skills/jetarm-debug/manifest.json",
+      "bytes": 436,
+      "sha256": "3c55dc419333f4a305548ba1aad81d80027ffc9cc3b2fe1b778bb94c8c51cfd4"
+    },
+    {
+      "path": "agent_cli/skills/jetarm-debug/SKILL.md",
+      "bytes": 757,
+      "sha256": "1e361e64b0c0ff92e72642385936c910e9a8d09e105f187f5312dd0231c860fc"
+    },
+    {
+      "path": "agent_cli/skills/open-world-grasp/manifest.json",
+      "bytes": 535,
+      "sha256": "8c08f71c83437794ac32716a7a7cf1f4d826bed34e60afe3761a2163c0bd072b"
+    },
+    {
+      "path": "agent_cli/skills/open-world-grasp/SKILL.md",
+      "bytes": 980,
+      "sha256": "d192f17f2cce59810e2e971e62a41e1b3901a4b422bcb654b75011a10861b7ee"
+    },
+    {
+      "path": "agent_cli/skills/recover-arm/manifest.json",
+      "bytes": 425,
+      "sha256": "2870b71f7dee3e74a4bdba781d18b7de0fde949aeb4580e4e06561bed21f65ab"
+    },
+    {
+      "path": "agent_cli/skills/recover-arm/SKILL.md",
+      "bytes": 627,
+      "sha256": "d80af4875e66f146d1ffe0b5a48027ac92eb31f06c87b4fb964d02438b564914"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 27,
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3948,
+      "sha256": "a2bba8619efb29b88868d65caa7ff442343756827412ee5908fe9b0cfcc6dbfb"
+    },
+    {
+      "path": "requirements-offline.txt",
+      "bytes": 14,
+      "sha256": "26db60f3749b2d582ef13e54530725d1038086c5b72953678670871c2b85e15a"
+    },
+    {
+      "path": "tests/test_agent_cli_full_control.py",
+      "bytes": 4458,
+      "sha256": "bfc0a658ba2181e63d218efacc7c47d290a26996f794e42e8e3dda05899d7ff5"
+    },
+    {
+      "path": "tests/test_public_configuration.py",
+      "bytes": 607,
+      "sha256": "01ff80d8cb57fb2720788ad9d83f96ba0506297d78419064cbcc8ce4078462e4"
+    }
+  ]
+}

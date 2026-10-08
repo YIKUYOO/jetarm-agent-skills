@@ -48,3 +48,44 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-offline.txt
       - run: python -B -m pytest -q -p no:cacheprovider
+  legacy-full-control-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: legacy/full-control-cli
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-offline.txt
+      - run: python -B -m pytest -q -p no:cacheprovider
+      - run: python -m compileall -q agent_cli
+      - run: bash -n agent_cli/bootstrap_jetson.sh
+  legacy-rdk-migration-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: legacy/rdk-migration-tools
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-offline.txt
+      - run: python -B -m pytest -q -p no:cacheprovider
+      - run: python -m compileall -q tools
+      - run: for script in tools/*.sh config/*.example; do bash -n "$script"; done
+  board-minimal-control-offline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: board/jetarm_minimal_control
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-offline.txt
+      - run: python -B -m pytest -q -p no:cacheprovider
+      - run: python -m compileall -q jetarm_minimal_control launch integration setup.py

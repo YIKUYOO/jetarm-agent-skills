@@ -1,0 +1,10 @@
+{
+  "name": "open-world-grasp",
+  "description": "Perform open-world desktop grasp attempts by observing, locating, planning, executing, verifying, and repairing failures.",
+  "version": "0.1.0",
+  "source": "project",
+  "allowed_tools": ["camera_frame", "shell", "ros", "rostopic", "rosservice", "rosrun", "roslaunch", "python_script", "go_home", "open_gripper", "close_gripper", "servo_debug", "stop_all"],
+  "risk_level": "critical",
+  "install_state": "active",
+  "review_notes": "Project-bundled full-control open grasp skill."
+}
